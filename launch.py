@@ -41,10 +41,10 @@ def main():
     if args.test_server:
         configure_for_tests()
 
-    if args.launch_ui:
-        start()
+    if args.no_launch_ui:
+        print("--no-launch-ui is set, skipping launching UI...")
     else:
-        print("--launch-ui set to False, skipping launching UI...")
+        start()
 
 
 if __name__ == "__main__":
