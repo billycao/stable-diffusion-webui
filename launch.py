@@ -41,8 +41,10 @@ def main():
     if args.test_server:
         configure_for_tests()
 
-    if args.skip_ui:
+    if args.launch_ui:
         start()
+    else:
+        print("--launch-ui set to False, skipping launching UI...")
 
 
 if __name__ == "__main__":
